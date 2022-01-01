@@ -1,0 +1,77 @@
+p, li{
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-weight: 600;
+}
+
+.row{
+    margin-top: 30px;
+}
+
+#sidebar{
+    background-color: #49d57f;
+    width:25%;
+    height:100vh;
+    text-align: center;
+    position:fixed;
+}
+#avatar{
+    border: 10px #49d57f solid;
+    width:200px;
+    height:200px;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display:inline-block;
+    
+}
+#sidebar .list-group-item{
+    border:0;
+    background-color: transparent;
+    color:white;
+    font-size: 20px;    
+    font-weight: bold;
+    letter-spacing: 3px;
+    opacity: 0.7;
+}
+#sidebar .list-group-item:hover{
+    background-color: #49d57f;
+}
+#sidebar .active{
+    background-color: transparent;
+    opacity: 1;
+}
+
+#content{
+    width: calc(75% - 80px);
+    padding-top: 50px;
+    padding-left: 80px;
+    margin-left: 25%;
+}
+#name{
+    color: #343a40;
+    font-size: 120px;
+}
+#mail{
+    color: #bd5d38;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+    #sidebar {display:none}
+    #content {margin-left:0;}
+}
